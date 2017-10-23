@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Longin and Registration | Success</title>
+</head>
+<body>
+    <div>
+        {% csrf_token %}
+        <h1>Success! Welcome, {{user.first_name}}!</h1>
+        <p>Successfully logged in! / Registered!</p>
+    </div>
+</body>
+</html>
