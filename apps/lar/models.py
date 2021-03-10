@@ -42,7 +42,7 @@ class UserManager(models.Manager):
             # make our new user
             # hash password
             hashed = bcrypt.hashpw((postData['password'].encode()), bcrypt.gensalt(5))
-            print "hashed code: ", hashed
+            # print "hashed code: ", hashed
             new_user = self.create(
                 first_name=postData['first_name'],
                 last_name=postData['last_name'],
